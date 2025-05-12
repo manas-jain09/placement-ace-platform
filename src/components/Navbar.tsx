@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <img 
-            src="/Main Logo.png" 
+            src="/MainLogo.png" 
             alt="Ikshvaku Innovations Logo" 
             className="h-25 w-auto"
           />
