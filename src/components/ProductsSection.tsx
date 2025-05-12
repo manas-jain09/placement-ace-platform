@@ -99,7 +99,91 @@ const ProductsSection = () => {
             </div>
           </div>
         </div>
-
+{/* Product 2: Yodha */}
+        <div className="mb-24">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+                <img 
+                  src="/Yodha.png" 
+                  alt="Yodha Performance Dashboard" 
+                  className="w-full h-auto rounded-xl object-cover shadow-md"
+                />
+              </div>
+            </div>
+            
+            <div className="lg:w-1/2">
+              <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
+                <span className="font-semibold text-primary">Yodha</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6">Personalized Performance Dashboard</h3>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Profile Details:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <Check className="h-4 w-4 text-primary" />
+                    </div>
+                    <div>
+                      Name, College, CGPA, and Bio.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Learning Metrics:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <ChartLine className="h-4 w-4 text-primary" />
+                    </div>
+                    <div>
+                      Progress in each learning path.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <ChartLine className="h-4 w-4 text-primary" />
+                    </div>
+                    <div>
+                      Question statistics: Easy, Medium, Hard.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <ChartLine className="h-4 w-4 text-primary" />
+                    </div>
+                    <div>
+                      Topic-wise strengths and weaknesses.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Badge System:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <Badge className="h-4 w-4 text-primary" />
+                    </div>
+                    <div>
+                      Earn badges for consistency, excellence, and challenge wins.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="p-4 bg-purple-50 rounded-lg">
+                <p className="font-medium text-purple-900">
+                  <span className="font-bold">Outcome:</span> Understand where you stand, grow smarter, and showcase achievements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* Product 3: Drona */}
         <div className="mb-24">
           <div className="flex flex-col lg:flex-row items-center gap-12">
