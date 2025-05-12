@@ -16,36 +16,6 @@ const HeroSection = () => {
               Ikshvaku Innovations is redefining how students learn, assess, and prepare for technical placements 
               with a powerful suite of platforms: Astra, Yudha, and Drona.
             </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Button className="bg-primary hover:bg-primary-dark text-white font-medium">
-                Explore Astra
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                <Calendar className="mr-2 h-4 w-4" />
-                Book a Demo
-              </Button>
-              <Button variant="secondary" className="bg-secondary hover:bg-secondary/90">
-                <MessageSquare className="mr-2 h-4 w-4" />
-                Join Community
-              </Button>
-            </div>
-            
-            <div className="mt-10">
-              <div className="flex items-center">
-                <div className="flex -space-x-3">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-primary-light border-2 border-white"></div>
-                  ))}
-                </div>
-                <div className="ml-4">
-                  <p className="font-semibold">1200+ Students</p>
-                  <p className="text-xs text-gray-500">Got placed in top tech companies</p>
-                </div>
-              </div>
-            </div>
-          </div>
           
           <div className="lg:w-1/2">
             <div className="relative">
