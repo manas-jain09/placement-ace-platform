@@ -17,7 +17,7 @@ const Navbar = () => {
           <img 
             src="/MainLogo.png" 
             alt="Ikshvaku Innovations Logo" 
-            className="h-12 w-auto"
+            className="h-14 w-auto"
           />
         </div>
         
