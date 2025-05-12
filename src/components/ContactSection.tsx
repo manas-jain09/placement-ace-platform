@@ -33,8 +33,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-gray-600">contact@ikshvakuinnovations.com</p>
-                    <p className="text-gray-600">support@ikshvakuinnovations.com</p>
+                    <p className="text-gray-600">support@ikshvaku-innovations.in</p>
                   </div>
                 </div>
                 
@@ -44,8 +43,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 12345 67890</p>
+                    <p className="text-gray-600">+91 95582 26792</p>
+                    <p className="text-gray-600">+91 94219 58719</p>
                   </div>
                 </div>
                 
@@ -56,9 +55,9 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Office</h4>
                     <p className="text-gray-600">
-                      742, Innovation Hub, Tech Park,<br />
-                      Bangalore - 560103<br />
-                      Karnataka, India
+                      C-9 Durvankur 2, Panchavati,<br />
+                      Pashan Road, Pune - 411008<br />
+                      Maharashtra, India
                     </p>
                   </div>
                 </div>
@@ -128,24 +127,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-        
-        <div className="mt-16">
-          <div className="bg-primary-lighter/10 rounded-xl p-6">
-            <div className="max-w-3xl mx-auto text-center">
-              <h3 className="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
-              <p className="text-gray-600 mb-6">
-                Get the latest updates, industry insights, and special offers for educational institutions.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Input placeholder="Your email address" className="flex-grow" />
-                <Button className="bg-primary hover:bg-primary-dark text-white">
-                  Subscribe
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </section>
   );
 };
