@@ -14,7 +14,7 @@ const HeroSection = () => {
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
               Ikshvaku Innovations is redefining how students learn, assess, and prepare for technical placements 
-              with a powerful suite of platforms: Astra, Yodha, Drona, Yudha, and AstraSiksha.
+              with a powerful suite of platforms: Astra, Yudha, and Drona.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -58,13 +58,6 @@ const HeroSection = () => {
                     <h3 className="font-semibold">Astra</h3>
                     <p className="text-xs text-gray-500">Structured Learning</p>
                   </div>
-                  <div className="bg-purple-50 p-4 rounded-xl flex flex-col items-center text-center">
-                    <div className="w-16 h-16 mb-2 flex items-center justify-center">
-                      <img src="/YudhaLogo.png" alt="Yudha Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <h3 className="font-semibold">Yodha</h3>
-                    <p className="text-xs text-gray-500">Performance Dashboard</p>
-                  </div>
                   <div className="bg-green-50 p-4 rounded-xl flex flex-col items-center text-center">
                     <div className="w-16 h-16 mb-2 flex items-center justify-center">
                       <img src="/DronaLogo.png" alt="Drona Logo" className="w-full h-full object-contain" />
@@ -72,21 +65,12 @@ const HeroSection = () => {
                     <h3 className="font-semibold">Drona</h3>
                     <p className="text-xs text-gray-500">DSA Visualizer</p>
                   </div>
-                  <div className="bg-orange-50 p-4 rounded-xl flex flex-col items-center text-center">
+                  <div className="bg-orange-50 p-4 rounded-xl col-span-2 flex flex-col items-center text-center">
                     <div className="w-16 h-16 mb-2 flex items-center justify-center">
                       <img src="/YudhaLogo.png" alt="Yudha Logo" className="w-full h-full object-contain" />
                     </div>
                     <h3 className="font-semibold">Yudha</h3>
                     <p className="text-xs text-gray-500">Assessment Platform</p>
-                  </div>
-                </div>
-                <div className="mt-4 w-full">
-                  <div className="bg-pink-50 p-4 rounded-xl flex flex-col items-center text-center">
-                    <div className="w-10 h-10 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mb-2">
-                      A
-                    </div>
-                    <h3 className="font-semibold">AstraSiksha</h3>
-                    <p className="text-xs text-gray-500">Mentorship & Community</p>
                   </div>
                 </div>
               </div>

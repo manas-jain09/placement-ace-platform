@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Home, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +11,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-sm py-4 sticky top-0 z-50">
+    <nav className="bg-white shadow-sm py-2 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <Home className="h-6 w-6 text-primary-light" />
+          <img 
+            src="/Main Logo.png" 
+            alt="Ikshvaku Innovations Logo" 
+            className="h-10 w-auto"
+          />
           <span className="font-heading font-bold text-xl text-primary">Ikshvaku Innovations</span>
         </div>
         
