@@ -65,30 +65,6 @@ const CollegesSection = () => {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">LMS Integration</h4>
-                    <p className="text-gray-600">
-                      Seamlessly integrate with your existing Learning Management Systems.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-blue-100 p-1.5 rounded-full mr-4 mt-1">
-                    <svg
-                      fill="none"
-                      height="24"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      className="h-5 w-5 text-blue-600"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </div>
-                  <div>
                     <h4 className="font-semibold mb-1">Performance Analytics</h4>
                     <p className="text-gray-600">
                       Comprehensive placement-readiness reporting for administrators and faculty.
@@ -119,13 +95,30 @@ const CollegesSection = () => {
                     </p>
                   </div>
                 </div>
-                
-                <div className="mt-8">
-                  <Button className="bg-primary hover:bg-primary-dark text-white font-medium w-full">
-                    <Calendar className="mr-2 h-4 w-4" />
-                    Book Institutional Demo
-                  </Button>
+                <div className="flex items-start">
+                <div className="bg-blue-100 p-1.5 rounded-full mr-4 mt-1">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    className="h-5 w-5 text-blue-600"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
                 </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Flexible Access Control</h4>
+                  <p className="text-gray-600">
+                    Grant role-based access to departments, faculty, and students to ensure structured usage and data privacy.
+                  </p>
+                </div>
+              </div>
+
               </div>
             </div>
           </div>
@@ -231,12 +224,7 @@ const CollegesSection = () => {
                   </p>
                 </div>
               </div>
-              
-              <div className="bg-gradient-to-r from-primary/10 to-blue-50 p-5 rounded-lg">
-                <p className="font-medium">
-                  Join the 25+ institutions already using our platform to transform their technical education and placement outcomes.
-                </p>
-              </div>
+            
             </div>
           </div>
         </div>
