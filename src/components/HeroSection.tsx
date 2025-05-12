@@ -10,13 +10,12 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-heading leading-tight text-gray-900">
-              Empowering Students to Ace Placements through Smart Learning & Assessment
+              Smarter Learning. Stronger Skills. Better Placements.
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-              Ikshvaku Innovations is redefining how students learn, assess, and prepare for technical placements 
-              with a powerful suite of platforms: Astra, Yudha, and Drona.
+              Ikshvaku Innovations empowers students with Astra, Yudha, and Drona — a next-gen suite for learning, assessment, and placement readiness.
             </p>
-          
+
           <div className="lg:w-1/2">
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 relative z-10">
