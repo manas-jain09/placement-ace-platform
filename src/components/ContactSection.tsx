@@ -97,8 +97,8 @@ const ContactSection = () => {
                             <Input type="text" placeholder="Subject" required />
             <Textarea placeholder="Message" rows={6} required />
             
-            <Button variant="primary" size="lg" className="w-full flex justify-center items-center">
-              <Send className="mr-2 h-5 w-5" />
+                  <Button className="bg-primary hover:bg-primary-dark text-white font-medium w-full">
+                    <Send className="mr-2 h-4 w-4" />
               Send Message
             </Button>
           </form>
