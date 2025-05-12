@@ -8,8 +8,8 @@ import {
   Eye, 
   Play, 
   LayoutDashboard, 
-  Shield, 
-  Users 
+  Users,
+  Sparkles 
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -89,11 +89,11 @@ const ProductsSection = () => {
             </div>
             
             <div className="lg:w-1/2 order-1 lg:order-2">
-              <div className="bg-white p-4 rounded-2xl shadow-lg border border-gray-100">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
                 <img 
                   src="/Astra.png" 
                   alt="Astra Learning Platform" 
-                  className="w-full h-auto rounded-xl object-cover"
+                  className="w-full h-auto rounded-xl object-cover shadow-md"
                 />
               </div>
             </div>
@@ -104,11 +104,11 @@ const ProductsSection = () => {
         <div className="mb-24">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-white p-4 rounded-2xl shadow-lg border border-gray-100">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
                 <img 
                   src="/Yodha.png" 
                   alt="Yodha Performance Dashboard" 
-                  className="w-full h-auto rounded-xl object-cover"
+                  className="w-full h-auto rounded-xl object-cover shadow-md"
                 />
               </div>
             </div>
@@ -186,45 +186,82 @@ const ProductsSection = () => {
           </div>
         </div>
 
-        {/* Other Products in Card Format */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {/* Drona */}
-          <Card className="card-hover overflow-hidden">
-            <div className="h-48 overflow-hidden">
-              <img 
-                src="/Drona.png" 
-                alt="Drona Visualization Platform" 
-                className="w-full h-full object-cover"
-              />
+        {/* Product 3: Drona */}
+        <div className="mb-24">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2 order-2 lg:order-1">
+              <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
+                <span className="font-semibold text-primary">Drona</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6">Algorithm & DSA Visualizer</h3>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Data Structure Visualizations:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-blue-100 p-1 rounded-full mr-3 mt-1">
+                      <Eye className="h-4 w-4 text-accent-blue" />
+                    </div>
+                    <div>
+                      <span className="font-medium">Fundamental Structures:</span> Arrays, Linked Lists, Stacks, Queues, Deques, Trees, BSTs, Graphs.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-blue-100 p-1 rounded-full mr-3 mt-1">
+                      <Eye className="h-4 w-4 text-accent-blue" />
+                    </div>
+                    <div>
+                      <span className="font-medium">Interactive Elements:</span> Step-by-step visualization with adjustable parameters and speeds.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Algorithm Visualizations:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Sparkles className="h-5 w-5 text-accent-blue mr-3" />
+                    <span>Searching & Sorting</span>
+                  </div>
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Sparkles className="h-5 w-5 text-accent-blue mr-3" />
+                    <span>CPU & Disk Scheduling</span>
+                  </div>
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Sparkles className="h-5 w-5 text-accent-blue mr-3" />
+                    <span>Recursion Problems</span>
+                  </div>
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Sparkles className="h-5 w-5 text-accent-blue mr-3" />
+                    <span>Classic Algorithms</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-4 bg-blue-50 rounded-lg">
+                <p className="font-medium text-blue-900">
+                  <span className="font-bold">Outcome:</span> Conceptual clarity through intuitive animations. Perfect for classroom teaching and self-learning.
+                </p>
+              </div>
             </div>
-            <CardHeader className="pb-3">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-3">
-                <Eye className="h-6 w-6 text-green-600" />
+            
+            <div className="lg:w-1/2 order-1 lg:order-2">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+                <img 
+                  src="/Drona.png" 
+                  alt="Drona Visualization Platform" 
+                  className="w-full h-auto rounded-xl object-cover shadow-md"
+                />
               </div>
-              <CardTitle className="text-xl">Drona</CardTitle>
-              <CardDescription>Algorithm & DSA Visualizer</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="text-sm font-semibold mb-2">Data Structure Visualizations</h4>
-                  <p className="text-sm text-gray-600">Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, and more.</p>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold mb-2">Algorithm Visualizations</h4>
-                  <p className="text-sm text-gray-600">CPU & Disk Scheduling, Searching, Sorting, and classic algorithms like Knapsack.</p>
-                </div>
-                <div className="pt-3 border-t">
-                  <p className="text-sm font-medium">
-                    <span className="font-bold">Outcome:</span> Conceptual clarity through intuitive animations.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-          
+            </div>
+          </div>
+        </div>
+
+        {/* Other Products in Card Format */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {/* Yudha */}
-          <Card className="card-hover">
+          <Card className="card-hover overflow-hidden">
             <CardHeader className="pb-3">
               <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-3">
                 <LayoutDashboard className="h-6 w-6 text-orange-600" />
