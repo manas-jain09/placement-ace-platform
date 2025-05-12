@@ -9,7 +9,8 @@ import {
   Play, 
   LayoutDashboard, 
   Users,
-  Sparkles 
+  Sparkles,
+  Shield
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -258,36 +259,94 @@ const ProductsSection = () => {
           </div>
         </div>
 
-        {/* Other Products in Card Format */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-          {/* Yudha */}
-          <Card className="card-hover overflow-hidden">
-            <CardHeader className="pb-3">
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-3">
-                <LayoutDashboard className="h-6 w-6 text-orange-600" />
+        {/* Product 4: Yudha */}
+        <div className="mb-24">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+                <img 
+                  src="/Yudha.png" 
+                  alt="Yudha Assessment Platform" 
+                  className="w-full h-auto rounded-xl object-cover shadow-md"
+                />
               </div>
-              <CardTitle className="text-xl">Yudha</CardTitle>
-              <CardDescription>Advanced Assessment Platform</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="text-sm font-semibold mb-2">Assessment Types</h4>
-                  <p className="text-sm text-gray-600">Mixed-format MCQs + Coding, weekly and company-specific tests.</p>
-                </div>
-                <div>
-                  <h4 className="text-sm font-semibold mb-2">Security Features</h4>
-                  <p className="text-sm text-gray-600">Anti-cheating screen detection and AI-based proctoring.</p>
-                </div>
-                <div className="pt-3 border-t">
-                  <p className="text-sm font-medium">
-                    <span className="font-bold">Outcome:</span> A robust platform for credible assessments.
-                  </p>
+            </div>
+            
+            <div className="lg:w-1/2">
+              <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
+                <span className="font-semibold text-primary">Yudha</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6">Advanced Assessment Platform</h3>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Assessment Types:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-orange-100 p-1 rounded-full mr-3 mt-1">
+                      <Check className="h-4 w-4 text-orange-600" />
+                    </div>
+                    <div>
+                      <span className="font-medium">Mixed-format:</span> MCQs + Coding assessments.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-orange-100 p-1 rounded-full mr-3 mt-1">
+                      <Check className="h-4 w-4 text-orange-600" />
+                    </div>
+                    <div>
+                      <span className="font-medium">Weekly, Monthly, and Company-specific:</span> Comprehensive mock tests.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Security Features:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Shield className="h-5 w-5 text-orange-600 mr-3" />
+                    <span>Anti-cheating detection</span>
+                  </div>
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Shield className="h-5 w-5 text-orange-600 mr-3" />
+                    <span>AI-based proctoring</span>
+                  </div>
                 </div>
               </div>
-            </CardContent>
-          </Card>
-          
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Admin Tools:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-orange-100 p-1 rounded-full mr-3 mt-1">
+                      <LayoutDashboard className="h-4 w-4 text-orange-600" />
+                    </div>
+                    <div>
+                      Faculty/Moderator assessment creation dashboard.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-orange-100 p-1 rounded-full mr-3 mt-1">
+                      <ChartLine className="h-4 w-4 text-orange-600" />
+                    </div>
+                    <div>
+                      Live tracking and reporting.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="p-4 bg-orange-50 rounded-lg">
+                <p className="font-medium text-orange-900">
+                  <span className="font-bold">Outcome:</span> A robust platform for institutes to conduct credible assessments and prepare students for interviews.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* AstraSiksha in Card Format */}
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 mt-12">
           {/* AstraSiksha */}
           <Card className="card-hover">
             <CardHeader className="pb-3">

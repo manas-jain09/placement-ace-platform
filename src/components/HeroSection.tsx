@@ -52,29 +52,29 @@ const HeroSection = () => {
               <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 relative z-10">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 p-4 rounded-xl flex flex-col items-center text-center">
-                    <div className="w-10 h-10 bg-blue-100 text-accent-blue rounded-full flex items-center justify-center mb-2">
-                      A
+                    <div className="w-16 h-16 mb-2 flex items-center justify-center">
+                      <img src="/AstraLogo.png" alt="Astra Logo" className="w-full h-full object-contain" />
                     </div>
                     <h3 className="font-semibold">Astra</h3>
                     <p className="text-xs text-gray-500">Structured Learning</p>
                   </div>
                   <div className="bg-purple-50 p-4 rounded-xl flex flex-col items-center text-center">
-                    <div className="w-10 h-10 bg-purple-100 text-primary rounded-full flex items-center justify-center mb-2">
-                      Y
+                    <div className="w-16 h-16 mb-2 flex items-center justify-center">
+                      <img src="/YudhaLogo.png" alt="Yudha Logo" className="w-full h-full object-contain" />
                     </div>
                     <h3 className="font-semibold">Yodha</h3>
                     <p className="text-xs text-gray-500">Performance Dashboard</p>
                   </div>
                   <div className="bg-green-50 p-4 rounded-xl flex flex-col items-center text-center">
-                    <div className="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-2">
-                      D
+                    <div className="w-16 h-16 mb-2 flex items-center justify-center">
+                      <img src="/DronaLogo.png" alt="Drona Logo" className="w-full h-full object-contain" />
                     </div>
                     <h3 className="font-semibold">Drona</h3>
                     <p className="text-xs text-gray-500">DSA Visualizer</p>
                   </div>
                   <div className="bg-orange-50 p-4 rounded-xl flex flex-col items-center text-center">
-                    <div className="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mb-2">
-                      Y
+                    <div className="w-16 h-16 mb-2 flex items-center justify-center">
+                      <img src="/YudhaLogo.png" alt="Yudha Logo" className="w-full h-full object-contain" />
                     </div>
                     <h3 className="font-semibold">Yudha</h3>
                     <p className="text-xs text-gray-500">Assessment Platform</p>
