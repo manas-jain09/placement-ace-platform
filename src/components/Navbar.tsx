@@ -19,7 +19,6 @@ const Navbar = () => {
             alt="Ikshvaku Innovations Logo" 
             className="h-10 w-auto"
           />
-          <span className="font-heading font-bold text-xl text-primary">Ikshvaku Innovations</span>
         </div>
         
         {/* Mobile menu button */}
