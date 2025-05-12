@@ -89,64 +89,12 @@ const ProductsSection = () => {
             </div>
             
             <div className="lg:w-1/2 order-1 lg:order-2">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center pb-4 border-b">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                        <span className="text-blue-600 font-bold">A</span>
-                      </div>
-                      <span className="font-bold text-lg">Astra Dashboard</span>
-                    </div>
-                    <div className="flex space-x-2">
-                      <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                      <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-blue-50 p-3 rounded-lg">
-                      <h5 className="font-semibold mb-1">CS Subjects</h5>
-                      <div className="h-2 w-full bg-gray-200 rounded-full">
-                        <div className="h-2 bg-blue-500 rounded-full" style={{width: "65%"}}></div>
-                      </div>
-                      <span className="text-xs text-gray-600 mt-1">65% complete</span>
-                    </div>
-                    <div className="bg-purple-50 p-3 rounded-lg">
-                      <h5 className="font-semibold mb-1">DSA Paths</h5>
-                      <div className="h-2 w-full bg-gray-200 rounded-full">
-                        <div className="h-2 bg-purple-500 rounded-full" style={{width: "40%"}}></div>
-                      </div>
-                      <span className="text-xs text-gray-600 mt-1">40% complete</span>
-                    </div>
-                  </div>
-                  
-                  <div className="border rounded-lg overflow-hidden">
-                    <div className="p-3 bg-gray-50 border-b">
-                      <h5 className="font-semibold">Weekly Challenge Progress</h5>
-                    </div>
-                    <div className="p-4">
-                      <div className="space-y-2">
-                        <div className="flex justify-between text-sm">
-                          <span>Binary Trees</span>
-                          <span className="text-green-600">4/5 completed</span>
-                        </div>
-                        <div className="h-2 w-full bg-gray-200 rounded-full">
-                          <div className="h-2 bg-green-500 rounded-full" style={{width: "80%"}}></div>
-                        </div>
-                        
-                        <div className="flex justify-between text-sm pt-2">
-                          <span>Dynamic Programming</span>
-                          <span className="text-orange-600">2/5 completed</span>
-                        </div>
-                        <div className="h-2 w-full bg-gray-200 rounded-full">
-                          <div className="h-2 bg-orange-500 rounded-full" style={{width: "40%"}}></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-white p-4 rounded-2xl shadow-lg border border-gray-100">
+                <img 
+                  src="/Astra.png" 
+                  alt="Astra Learning Platform" 
+                  className="w-full h-auto rounded-xl object-cover"
+                />
               </div>
             </div>
           </div>
@@ -156,55 +104,12 @@ const ProductsSection = () => {
         <div className="mb-24">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center pb-4 border-b">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                        <span className="text-purple-600 font-bold">Y</span>
-                      </div>
-                      <span className="font-bold text-lg">Performance Dashboard</span>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg border">
-                    <div className="w-16 h-16 bg-gray-200 rounded-full"></div>
-                    <div>
-                      <h5 className="font-semibold">Rahul Sharma</h5>
-                      <p className="text-sm text-gray-600">VIT Vellore • CGPA: 8.9</p>
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="text-center p-3 bg-green-50 rounded-lg">
-                      <div className="text-3xl font-bold text-green-600">42</div>
-                      <div className="text-xs text-gray-600">Easy</div>
-                    </div>
-                    <div className="text-center p-3 bg-orange-50 rounded-lg">
-                      <div className="text-3xl font-bold text-orange-600">28</div>
-                      <div className="text-xs text-gray-600">Medium</div>
-                    </div>
-                    <div className="text-center p-3 bg-red-50 rounded-lg">
-                      <div className="text-3xl font-bold text-red-600">15</div>
-                      <div className="text-xs text-gray-600">Hard</div>
-                    </div>
-                  </div>
-                  
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="border p-2 rounded-lg text-center flex flex-col items-center">
-                      <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mb-1">
-                        <Badge className="h-5 w-5 text-yellow-600" />
-                      </div>
-                      <span className="text-sm">Consistency Badge</span>
-                    </div>
-                    <div className="border p-2 rounded-lg text-center flex flex-col items-center">
-                      <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-1">
-                        <Badge className="h-5 w-5 text-blue-600" />
-                      </div>
-                      <span className="text-sm">Excellence Badge</span>
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-white p-4 rounded-2xl shadow-lg border border-gray-100">
+                <img 
+                  src="/Yodha.png" 
+                  alt="Yodha Performance Dashboard" 
+                  className="w-full h-auto rounded-xl object-cover"
+                />
               </div>
             </div>
             
@@ -284,7 +189,14 @@ const ProductsSection = () => {
         {/* Other Products in Card Format */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {/* Drona */}
-          <Card className="card-hover">
+          <Card className="card-hover overflow-hidden">
+            <div className="h-48 overflow-hidden">
+              <img 
+                src="/Drona.png" 
+                alt="Drona Visualization Platform" 
+                className="w-full h-full object-cover"
+              />
+            </div>
             <CardHeader className="pb-3">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-3">
                 <Eye className="h-6 w-6 text-green-600" />
