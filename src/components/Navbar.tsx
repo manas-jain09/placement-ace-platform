@@ -39,9 +39,6 @@ const Navbar = () => {
           <a href="#why" className="text-gray-700 hover:text-primary font-medium transition-colors">Why Us</a>
           <a href="#colleges" className="text-gray-700 hover:text-primary font-medium transition-colors">For Colleges</a>
           <a href="#contact" className="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-            Login
-          </Button>
         </div>
       </div>
       
@@ -54,9 +51,6 @@ const Navbar = () => {
             <a href="#why" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>Why Us</a>
             <a href="#colleges" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>For Colleges</a>
             <a href="#contact" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>Contact</a>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white w-full">
-              Login
-            </Button>
           </div>
         </div>
       )}
