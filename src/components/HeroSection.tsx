@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MessageSquare } from 'lucide-react';
@@ -8,6 +7,7 @@ const HeroSection = () => {
     <section id="home" className="hero-gradient section-padding relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* First column */}
           <div className="lg:w-1/2">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-heading leading-tight text-gray-900">
               Smarter Learning. Stronger Skills. Better Placements.
@@ -15,7 +15,9 @@ const HeroSection = () => {
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
               Ikshvaku Innovations empowers students with Astra, Yudha, and Drona — a next-gen suite for learning, assessment, and placement readiness.
             </p>
-
+          </div>
+          
+          {/* Second column */}
           <div className="lg:w-1/2">
             <div className="relative">
               <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 relative z-10">
