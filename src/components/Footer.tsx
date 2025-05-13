@@ -29,14 +29,17 @@ const Footer = () => {
               </a>
             </div>
           </div>
+        </div> {/* <-- This was missing */}
         
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm">© 2025 Ikshvaku Innovations. All rights reserved.</p>
             <div className="mt-4 md:mt-0">
+              {/* Optional links or info here */}
             </div>
           </div>
         </div>
+      </div>
     </footer>
   );
 };
