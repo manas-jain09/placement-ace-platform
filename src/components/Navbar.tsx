@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,11 @@ const Navbar = () => {
   };
 
   const scrollToSection = (sectionId: string) => {
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
@@ -51,6 +57,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-primary font-medium transition-colors">Products</button>
           <button onClick={() => scrollToSection('why')} className="text-gray-700 hover:text-primary font-medium transition-colors">Why Us</button>
           <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors">For Colleges</button>
+          <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors">About Us</Link>
           <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors">Contact</button>
         </div>
       </div>
@@ -63,6 +70,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Products</button>
             <button onClick={() => scrollToSection('why')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Why Us</button>
             <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">For Colleges</button>
+            <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">About Us</Link>
             <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Contact</button>
           </div>
         </div>
