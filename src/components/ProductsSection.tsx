@@ -6,10 +6,9 @@ import {
   Badge, 
   ChartLine, 
   Eye, 
-  Play, 
-  LayoutDashboard,
+  Sparkles, 
   Shield,
-  Sparkles
+  LayoutDashboard
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -33,9 +32,9 @@ const ProductsSection = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 order-2 lg:order-1">
               <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
-                <span className="font-semibold text-primary">Astra</span>
+                <span className="font-semibold text-primary text-lg">Astra</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">Structured Learning Platform</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">Structured Learning Platform</h3>
               
               <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-3">Learning Paths:</h4>
@@ -89,7 +88,7 @@ const ProductsSection = () => {
             </div>
             
             <div className="lg:w-1/2 order-1 lg:order-2">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300 hover:shadow-xl">
                 <img 
                   src="/Astra.png" 
                   alt="Astra Learning Platform" 
@@ -99,11 +98,12 @@ const ProductsSection = () => {
             </div>
           </div>
         </div>
-{/* Product 2: Yodha */}
+        
+        {/* Product 2: Yodha */}
         <div className="mb-24">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300 hover:shadow-xl">
                 <img 
                   src="/Yodha.png" 
                   alt="Yodha Performance Dashboard" 
@@ -114,9 +114,9 @@ const ProductsSection = () => {
             
             <div className="lg:w-1/2">
               <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
-                <span className="font-semibold text-primary">Yodha</span>
+                <span className="font-semibold text-primary text-lg">Yodha</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">Personalized Performance Dashboard</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">Personalized Performance Dashboard</h3>
               
               <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-3">Profile Details:</h4>
@@ -184,14 +184,15 @@ const ProductsSection = () => {
             </div>
           </div>
         </div>
+        
         {/* Product 3: Drona */}
         <div className="mb-24">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 order-2 lg:order-1">
               <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
-                <span className="font-semibold text-primary">Drona</span>
+                <span className="font-semibold text-primary text-lg">Drona</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">Algorithm & DSA Visualizer</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">Algorithm & DSA Visualizer</h3>
               
               <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-3">Data Structure Visualizations:</h4>
@@ -245,7 +246,7 @@ const ProductsSection = () => {
             </div>
             
             <div className="lg:w-1/2 order-1 lg:order-2">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300 hover:shadow-xl">
                 <img 
                   src="/Drona.png" 
                   alt="Drona Visualization Platform" 
@@ -260,7 +261,7 @@ const ProductsSection = () => {
         <div className="mb-24">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300 hover:shadow-xl">
                 <img 
                   src="/Yudha.png" 
                   alt="Yudha Assessment Platform" 
@@ -271,9 +272,9 @@ const ProductsSection = () => {
             
             <div className="lg:w-1/2">
               <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
-                <span className="font-semibold text-primary">Yudha</span>
+                <span className="font-semibold text-primary text-lg">Yudha</span>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">Advanced Assessment Platform</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">Advanced Assessment Platform</h3>
               
               <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-3">Assessment Types:</h4>

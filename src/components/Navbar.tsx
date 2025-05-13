@@ -10,6 +10,19 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      if (isOpen) {
+        setIsOpen(false);
+      }
+    }
+  };
+
   return (
     <nav className="bg-white shadow-sm py-2 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -34,11 +47,11 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-gray-700 hover:text-primary font-medium transition-colors">Home</a>
-          <a href="#products" className="text-gray-700 hover:text-primary font-medium transition-colors">Products</a>
-          <a href="#why" className="text-gray-700 hover:text-primary font-medium transition-colors">Why Us</a>
-          <a href="#colleges" className="text-gray-700 hover:text-primary font-medium transition-colors">For Colleges</a>
-          <a href="#contact" className="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+          <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-medium transition-colors">Home</button>
+          <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-primary font-medium transition-colors">Products</button>
+          <button onClick={() => scrollToSection('why')} className="text-gray-700 hover:text-primary font-medium transition-colors">Why Us</button>
+          <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors">For Colleges</button>
+          <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors">Contact</button>
         </div>
       </div>
       
@@ -46,11 +59,11 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white py-4 px-4 shadow-lg absolute w-full">
           <div className="flex flex-col space-y-4">
-            <a href="#home" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>Home</a>
-            <a href="#products" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>Products</a>
-            <a href="#why" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>Why Us</a>
-            <a href="#colleges" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>For Colleges</a>
-            <a href="#contact" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50" onClick={toggleMenu}>Contact</a>
+            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Home</button>
+            <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Products</button>
+            <button onClick={() => scrollToSection('why')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Why Us</button>
+            <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">For Colleges</button>
+            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Contact</button>
           </div>
         </div>
       )}
