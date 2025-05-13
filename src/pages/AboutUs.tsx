@@ -9,7 +9,9 @@ import {
   CardHeader, 
   CardTitle 
 } from '@/components/ui/card';
-import { Target, Lightbulb, Award } from 'lucide-react';
+import { Target, Lightbulb, Award, Linkedin } from 'lucide-react';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
 const AboutUs = () => {
   return (
@@ -127,10 +129,18 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <Card className="overflow-hidden shadow-md hover:shadow-xl transition-all">
                 <div className="bg-gradient-to-r from-blue-100 to-blue-50 p-6">
-                  <div className="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4">
-                    {/* Founder image placeholder */}
+                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                    <Avatar className="w-full h-full">
+                      <AvatarImage src="/Manas.jpeg" alt="Manas Sharma" className="object-cover" />
+                      <AvatarFallback>MS</AvatarFallback>
+                    </Avatar>
                   </div>
-                  <CardTitle className="text-center text-xl mb-1">Rahul Sharma</CardTitle>
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <CardTitle className="text-center text-xl">Manas Sharma</CardTitle>
+                    <a href="https://www.linkedin.com/in/manas-sharma" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                      <Linkedin className="h-5 w-5 text-blue-600 hover:text-blue-800 transition-colors" />
+                    </a>
+                  </div>
                   <CardDescription className="text-center mb-4">Co-Founder & CEO</CardDescription>
                 </div>
                 <CardContent className="pt-6">
@@ -138,17 +148,25 @@ const AboutUs = () => {
                     "Our mission at Ikshvaku Innovations is to revolutionize how technical education is delivered and assessed. We believe in creating tools that not only measure skills but help develop them in a meaningful way."
                   </p>
                   <p className="text-gray-600">
-                    With over 15 years of experience in education technology, Rahul brings a wealth of expertise in creating scalable EdTech solutions that address real educational challenges across diverse learning environments.
+                    With over 15 years of experience in education technology, Manas brings a wealth of expertise in creating scalable EdTech solutions that address real educational challenges across diverse learning environments.
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="overflow-hidden shadow-md hover:shadow-xl transition-all">
                 <div className="bg-gradient-to-r from-purple-100 to-purple-50 p-6">
-                  <div className="w-32 h-32 rounded-full bg-gray-300 mx-auto mb-4">
-                    {/* Founder image placeholder */}
+                  <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                    <Avatar className="w-full h-full">
+                      <AvatarImage src="/Varad.jpeg" alt="Varad Patel" className="object-cover" />
+                      <AvatarFallback>VP</AvatarFallback>
+                    </Avatar>
                   </div>
-                  <CardTitle className="text-center text-xl mb-1">Priya Patel</CardTitle>
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <CardTitle className="text-center text-xl">Varad Patel</CardTitle>
+                    <a href="https://www.linkedin.com/in/varad-patel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                      <Linkedin className="h-5 w-5 text-blue-600 hover:text-blue-800 transition-colors" />
+                    </a>
+                  </div>
                   <CardDescription className="text-center mb-4">Co-Founder & CTO</CardDescription>
                 </div>
                 <CardContent className="pt-6">
@@ -156,7 +174,7 @@ const AboutUs = () => {
                     "Technology should enhance learning, not complicate it. At Ikshvaku, we're building platforms that make advanced technical concepts more accessible while providing educators with powerful tools to measure progress."
                   </p>
                   <p className="text-gray-600">
-                    Priya brings technical leadership from her background at leading tech companies, where she specialized in AI-powered educational platforms and assessment systems designed to optimize learning outcomes.
+                    Varad brings technical leadership from his background at leading tech companies, where he specialized in AI-powered educational platforms and assessment systems designed to optimize learning outcomes.
                   </p>
                 </CardContent>
               </Card>
