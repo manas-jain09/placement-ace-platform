@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -88,7 +87,7 @@ const AboutUs = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all text-center">
                 <div className="bg-green-100 text-green-600 p-3 rounded-full w-fit mx-auto mb-4">
                   <Award className="h-6 w-6" />
