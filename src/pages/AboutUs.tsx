@@ -164,7 +164,7 @@ const AboutUs = () => {
                   </div>
                   <div className="flex items-center justify-center gap-2 mb-1">
                     <CardTitle className="text-center text-xl">Manas Jain</CardTitle>
-                    <a href="https://www.linkedin.com/in/manas-sharma" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <a href="https://www.linkedin.com/in/manas-jain-806718246/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                       <Linkedin className="h-5 w-5 text-blue-600 hover:text-blue-800 transition-colors" />
                     </a>
                   </div>
@@ -194,7 +194,7 @@ const AboutUs = () => {
                   </div>
                   <div className="flex items-center justify-center gap-2 mb-1">
                     <CardTitle className="text-center text-xl">Varad Charholikar</CardTitle>
-                    <a href="https://www.linkedin.com/in/varad-patel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <a href="https://www.linkedin.com/in/varad-charholikar-6b7070278/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                       <Linkedin className="h-5 w-5 text-blue-600 hover:text-blue-800 transition-colors" />
                     </a>
                   </div>
