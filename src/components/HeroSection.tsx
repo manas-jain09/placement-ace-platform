@@ -34,7 +34,7 @@ const HeroSection = () => {
                       <img src="/DronaLogo.png" alt="Drona Logo" className="w-full h-full object-contain" />
                     </div>
                     <h3 className="font-semibold">Drona</h3>
-                    <p className="text-xs text-gray-500">DSA Visualizer</p>
+                    <p className="text-xs text-gray-500">Data Structures & Algorithms Visualizer</p>
                   </div>
                   <div className="bg-orange-50 p-4 rounded-xl col-span-2 flex flex-col items-center text-center">
                     <div className="w-16 h-16 mb-2 flex items-center justify-center">
