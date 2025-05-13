@@ -33,7 +33,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-gray-600">support@ikshvaku-innovations.in</p>
+                    <p className="text-gray-600">info@ikshvakuinnovations.in</p>
                   </div>
                 </div>
                 
