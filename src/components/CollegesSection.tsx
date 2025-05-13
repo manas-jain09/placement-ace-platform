@@ -43,7 +43,7 @@ const CollegesSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Comprehensive Suite</h4>
                     <p className="text-gray-600">
-                      Get access to Astra + Yodha + Yudha suite with bulk user enrollment options.
+                      Get access to Astra, Drona & Yudha suite with bulk user enrollment options.
                     </p>
                   </div>
                 </div>
