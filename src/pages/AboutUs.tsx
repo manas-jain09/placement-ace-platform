@@ -9,7 +9,7 @@ import {
   CardHeader, 
   CardTitle 
 } from '@/components/ui/card';
-import { Target, Lightbulb, Award, Linkedin } from 'lucide-react';
+import { Target, Lightbulb, Award, Linkedin, Users, Shield, Globe } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
@@ -88,7 +88,7 @@ const AboutUs = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all text-center">
                 <div className="bg-green-100 text-green-600 p-3 rounded-full w-fit mx-auto mb-4">
                   <Award className="h-6 w-6" />
@@ -111,6 +111,30 @@ const AboutUs = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Integrity</h3>
                 <p className="text-gray-600">Acting with honesty and transparency in all our operations</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all text-center">
+                <div className="bg-purple-100 text-purple-600 p-3 rounded-full w-fit mx-auto mb-4">
+                  <Users className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Collaboration</h3>
+                <p className="text-gray-600">Working together with educators and industry to achieve shared goals</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all text-center">
+                <div className="bg-red-100 text-red-600 p-3 rounded-full w-fit mx-auto mb-4">
+                  <Shield className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Reliability</h3>
+                <p className="text-gray-600">Building trust through consistent delivery of quality solutions</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all text-center">
+                <div className="bg-teal-100 text-teal-600 p-3 rounded-full w-fit mx-auto mb-4">
+                  <Globe className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Inclusivity</h3>
+                <p className="text-gray-600">Creating educational solutions accessible to students of all backgrounds</p>
               </div>
             </div>
           </div>
