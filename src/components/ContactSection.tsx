@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, Globe, Send } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -25,13 +24,14 @@ const ContactSection = () => {
       };
       
       // Initialize EmailJS with your public key
-      emailjs.init("YOUR_PUBLIC_KEY");
+      // Replace EMAILJS_PUBLIC_KEY with your actual EmailJS public key
+      // You can find this in your EmailJS dashboard: https://dashboard.emailjs.com/admin/account
+      emailjs.init(process.env.EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY");
       
       await emailjs.send(
-        "YOUR_SERVICE_ID",  // Service ID from EmailJS
-        "YOUR_TEMPLATE_ID", // Template ID from EmailJS
-        templateParams,
-        "YOUR_PUBLIC_KEY"   // Public Key from EmailJS
+        process.env.EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID",  // Service ID from EmailJS
+        process.env.EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID", // Template ID from EmailJS
+        templateParams
       );
       
       toast.success("Message sent successfully!", {
@@ -41,9 +41,17 @@ const ContactSection = () => {
       reset(); // Reset form fields
     } catch (error) {
       console.error("Error sending email:", error);
-      toast.error("Failed to send message", {
-        description: "Please try again or contact us directly."
-      });
+      
+      // Show more specific error message
+      if (error.status === 400 && error.text?.includes("Public Key is invalid")) {
+        toast.error("EmailJS configuration error", {
+          description: "Please configure your EmailJS credentials properly."
+        });
+      } else {
+        toast.error("Failed to send message", {
+          description: "Please try again or contact us directly."
+        });
+      }
     } finally {
       setIsSubmitting(false);
     }
