@@ -1,62 +1,11 @@
-import React, { useState } from 'react';
+
+import React from 'react';
 import { Mail, Phone, Globe, Send } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useForm } from "react-hook-form";
-import { toast } from "@/components/ui/sonner";
-import emailjs from 'emailjs-com';
 
 const ContactSection = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { register, handleSubmit, reset, formState: { errors } } = useForm();
-  
-  const onSubmit = async (data) => {
-    setIsSubmitting(true);
-    
-    try {
-      const templateParams = {
-        from_name: data.name,
-        from_email: data.email,
-        subject: data.subject,
-        message: data.message,
-        to_email: 'info@ikshvaku-innovations.in'
-      };
-      
-      // Initialize EmailJS with your public key
-      // Replace EMAILJS_PUBLIC_KEY with your actual EmailJS public key
-      // You can find this in your EmailJS dashboard: https://dashboard.emailjs.com/admin/account
-      emailjs.init(process.env.EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY");
-      
-      await emailjs.send(
-        process.env.EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID",  // Service ID from EmailJS
-        process.env.EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID", // Template ID from EmailJS
-        templateParams
-      );
-      
-      toast.success("Message sent successfully!", {
-        description: "We'll get back to you soon."
-      });
-      
-      reset(); // Reset form fields
-    } catch (error) {
-      console.error("Error sending email:", error);
-      
-      // Show more specific error message
-      if (error.status === 400 && error.text?.includes("Public Key is invalid")) {
-        toast.error("EmailJS configuration error", {
-          description: "Please configure your EmailJS credentials properly."
-        });
-      } else {
-        toast.error("Failed to send message", {
-          description: "Please try again or contact us directly."
-        });
-      }
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <section id="contact" className="section-padding">
       <div className="container mx-auto px-4">
@@ -141,76 +90,25 @@ const ContactSection = () => {
             <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
               <h3 className="text-xl font-bold mb-6">Send Us a Message</h3>
               
-              <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
+              <form className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <Input 
-                      placeholder="Your Name" 
-                      {...register("name", { required: "Name is required" })} 
-                    />
-                    {errors.name && (
-                      <p className="mt-1 text-sm text-red-500">{errors.name.message?.toString()}</p>
-                    )}
+                  <Input placeholder="Your Name" required />
+                  <Input type="email" placeholder="Your Email" required />
                   </div>
-                  <div>
-                    <Input 
-                      type="email" 
-                      placeholder="Your Email" 
-                      {...register("email", { 
-                        required: "Email is required",
-                        pattern: {
-                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                          message: "Invalid email address"
-                        }
-                      })} 
-                    />
-                    {errors.email && (
-                      <p className="mt-1 text-sm text-red-500">{errors.email.message?.toString()}</p>
-                    )}
-                  </div>
-                </div>
-                
-                <div>
-                  <Input 
-                    type="text" 
-                    placeholder="Subject" 
-                    {...register("subject", { required: "Subject is required" })} 
-                  />
-                  {errors.subject && (
-                    <p className="mt-1 text-sm text-red-500">{errors.subject.message?.toString()}</p>
-                  )}
-                </div>
-                
-                <div>
-                  <Textarea 
-                    placeholder="Message" 
-                    rows={6} 
-                    {...register("message", { required: "Message is required" })} 
-                  />
-                  {errors.message && (
-                    <p className="mt-1 text-sm text-red-500">{errors.message.message?.toString()}</p>
-                  )}
-                </div>
+                            <Input type="text" placeholder="Subject" required />
+            <Textarea placeholder="Message" rows={6} required />
             
-                <Button 
-                  type="submit" 
-                  disabled={isSubmitting}
-                  className="bg-primary hover:bg-primary-dark text-white font-medium w-full"
-                >
-                  {isSubmitting ? 'Sending...' : (
-                    <>
-                      <Send className="mr-2 h-4 w-4" />
-                      Send Message
-                    </>
-                  )}
-                </Button>
-              </form>
-            </div>
-          </div>
+                  <Button className="bg-primary hover:bg-primary-dark text-white font-medium w-full">
+                    <Send className="mr-2 h-4 w-4" />
+              Send Message
+            </Button>
+          </form>
         </div>
       </div>
-    </section>
-  );
+    </div>
+  </div>
+</section>
+);
 };
 
 export default ContactSection;
