@@ -141,7 +141,7 @@ const ContactSection = () => {
                       {...register("name", { required: "Name is required" })} 
                     />
                     {errors.name && (
-                      <p className="mt-1 text-sm text-red-500">{errors.name.message}</p>
+                      <p className="mt-1 text-sm text-red-500">{errors.name.message?.toString()}</p>
                     )}
                   </div>
                   <div>
@@ -157,7 +157,7 @@ const ContactSection = () => {
                       })} 
                     />
                     {errors.email && (
-                      <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
+                      <p className="mt-1 text-sm text-red-500">{errors.email.message?.toString()}</p>
                     )}
                   </div>
                 </div>
@@ -169,7 +169,7 @@ const ContactSection = () => {
                     {...register("subject", { required: "Subject is required" })} 
                   />
                   {errors.subject && (
-                    <p className="mt-1 text-sm text-red-500">{errors.subject.message}</p>
+                    <p className="mt-1 text-sm text-red-500">{errors.subject.message?.toString()}</p>
                   )}
                 </div>
                 
@@ -180,7 +180,7 @@ const ContactSection = () => {
                     {...register("message", { required: "Message is required" })} 
                   />
                   {errors.message && (
-                    <p className="mt-1 text-sm text-red-500">{errors.message.message}</p>
+                    <p className="mt-1 text-sm text-red-500">{errors.message.message?.toString()}</p>
                   )}
                 </div>
             
