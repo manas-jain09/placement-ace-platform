@@ -186,7 +186,10 @@ const PricingSection = () => {
           </Card>
 
           {/* PLAN D */}
-          <Card className="border-2 border-primary/30 bg-primary/5 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02]">
+          <Card className="border-2 border-primary/30 bg-primary/5 hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] relative">
+            <div className="absolute -top-4 left-0 right-0 flex justify-center">
+              <Badge className="bg-green-600 text-white">Best Value</Badge>
+            </div>
             <CardHeader className="space-y-1 text-center pb-2">
               <Badge variant="outline" className="mb-2 mx-auto border-primary/30 text-primary font-medium">
                 PLAN D
