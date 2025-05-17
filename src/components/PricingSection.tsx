@@ -72,7 +72,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button variant="outline" className="w-full" onClick={scrollToContact}>Get Started</Button>
+              <Button variant="outline" className="w-full" onClick={scrollToContact}>Contact Sales</Button>
             </CardContent>
           </Card>
 
@@ -131,7 +131,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full" onClick={scrollToContact}>Get Started</Button>
+              <Button className="w-full" onClick={scrollToContact}>Contact Sales</Button>
             </CardContent>
           </Card>
 
@@ -181,7 +181,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button variant="outline" className="w-full" onClick={scrollToContact}>Get Started</Button>
+              <Button variant="outline" className="w-full" onClick={scrollToContact}>Contact Sales</Button>
             </CardContent>
           </Card>
 
@@ -238,7 +238,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full bg-gradient-to-r from-primary to-primary-light" onClick={scrollToContact}>Get Started</Button>
+              <Button className="w-full bg-gradient-to-r from-primary to-primary-light" onClick={scrollToContact}>Contact Sales</Button>
             </CardContent>
           </Card>
         </div>
