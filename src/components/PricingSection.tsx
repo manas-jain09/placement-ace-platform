@@ -6,6 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Check, DollarSign, BadgeDollarSign, Layers, Book } from 'lucide-react';
 
 const PricingSection = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="pricing" className="section-padding bg-gray-50">
       <div className="container mx-auto px-4">
@@ -65,7 +72,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button variant="outline" className="w-full">Contact Us</Button>
+              <Button variant="outline" className="w-full" onClick={scrollToContact}>Get Started</Button>
             </CardContent>
           </Card>
 
@@ -124,7 +131,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full">Get Started</Button>
+              <Button className="w-full" onClick={scrollToContact}>Get Started</Button>
             </CardContent>
           </Card>
 
@@ -174,7 +181,7 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button variant="outline" className="w-full">Get Started</Button>
+              <Button variant="outline" className="w-full" onClick={scrollToContact}>Get Started</Button>
             </CardContent>
           </Card>
 
@@ -231,14 +238,14 @@ const PricingSection = () => {
                 </div>
               </div>
               
-              <Button className="w-full bg-gradient-to-r from-primary to-primary-light">Best Value</Button>
+              <Button className="w-full bg-gradient-to-r from-primary to-primary-light" onClick={scrollToContact}>Get Started</Button>
             </CardContent>
           </Card>
         </div>
         
         <div className="mt-12 text-center">
           <p className="text-gray-600 mb-6">Need a custom plan for your institution?</p>
-          <Button variant="outline" className="px-8">Contact Us for Enterprise Pricing</Button>
+          <Button variant="outline" className="px-8" onClick={scrollToContact}>Contact Us for Enterprise Pricing</Button>
         </div>
       </div>
     </section>
