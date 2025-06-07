@@ -23,7 +23,7 @@ const Login = () => {
     try {
       // Query the users table to authenticate
       const { data: userData, error: queryError } = await supabase
-        .from('users')
+        .from('auth')
         .select('id, username, prn, email, department, course, grad_year')
         .eq('email', email)
         .eq('password', password)
