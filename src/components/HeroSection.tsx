@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -15,6 +17,12 @@ const HeroSection = () => {
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
               Ikshvaku Innovations empowers students with Astra, Yudha, and Drona — a next-gen suite for learning, assessment, and placement readiness.
             </p>
+            <Link to="/login">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
           
           {/* Second column */}

@@ -60,6 +60,9 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors">For Colleges</button>
           <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors">About Us</Link>
           <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors">Contact</button>
+          <Link to="/login">
+            <Button className="ml-4">Login</Button>
+          </Link>
         </div>
       </div>
       
@@ -74,6 +77,9 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">For Colleges</button>
             <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">About Us</Link>
             <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Contact</button>
+            <Link to="/login" className="py-2 px-4 rounded-md hover:bg-gray-50 text-left">
+              <Button className="w-full">Login</Button>
+            </Link>
           </div>
         </div>
       )}
