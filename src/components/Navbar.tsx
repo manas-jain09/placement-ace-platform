@@ -56,7 +56,7 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-medium transition-colors">Home</button>
           <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-primary font-medium transition-colors">Products</button>
           <button onClick={() => scrollToSection('why')} className="text-gray-700 hover:text-primary font-medium transition-colors">Why Us</button>
-          <button onClick={() => scrollToSection('pricing')} className="text-gray-700 hover:text-primary font-medium transition-colors">Pricing</button>
+{/*           <button onClick={() => scrollToSection('pricing')} className="text-gray-700 hover:text-primary font-medium transition-colors">Pricing</button> */}
           <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors">For Colleges</button>
           <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors">About Us</Link>
           <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors">Contact</button>
@@ -73,7 +73,7 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Home</button>
             <button onClick={() => scrollToSection('products')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Products</button>
             <button onClick={() => scrollToSection('why')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Why Us</button>
-            <button onClick={() => scrollToSection('pricing')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Pricing</button>
+{/*             <button onClick={() => scrollToSection('pricing')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Pricing</button> */}
             <button onClick={() => scrollToSection('colleges')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">For Colleges</button>
             <Link to="/about" className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">About Us</Link>
             <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary font-medium transition-colors py-2 px-4 rounded-md hover:bg-gray-50 text-left">Contact</button>
