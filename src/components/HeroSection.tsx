@@ -15,7 +15,7 @@ const HeroSection = () => {
               Smarter Learning. Stronger Skills. Better Placements.
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-              Ikshvaku Innovations empowers students with Astra, Yudha, and Drona — a next-gen suite for learning, assessment, and placement readiness.
+              Ikshvaku Innovations empowers students with Astra, Yudha, Drona, and Shaurya — a next-gen suite for learning, assessment, visualization, and AI-powered mock interviews.
             </p>
             <Link to="/login">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
@@ -44,12 +44,19 @@ const HeroSection = () => {
                     <h3 className="font-semibold">Drona</h3>
                     <p className="text-xs text-gray-500">Data Structures & Algorithms Visualizer</p>
                   </div>
-                  <div className="bg-orange-50 p-4 rounded-xl col-span-2 flex flex-col items-center text-center">
+                  <div className="bg-orange-50 p-4 rounded-xl flex flex-col items-center text-center">
                     <div className="w-16 h-16 mb-2 flex items-center justify-center">
                       <img src="/YudhaLogo.png" alt="Yudha Logo" className="w-full h-full object-contain" />
                     </div>
                     <h3 className="font-semibold">Yudha</h3>
                     <p className="text-xs text-gray-500">Assessment Platform</p>
+                  </div>
+                  <div className="bg-purple-50 p-4 rounded-xl flex flex-col items-center text-center">
+                    <div className="w-16 h-16 mb-2 flex items-center justify-center">
+                      <img src="/ShauryaLogo.png" alt="Shaurya Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <h3 className="font-semibold">Shaurya</h3>
+                    <p className="text-xs text-gray-500">AI Mock Interviews</p>
                   </div>
                 </div>
               </div>

@@ -8,7 +8,11 @@ import {
   Eye, 
   Sparkles, 
   Shield,
-  LayoutDashboard
+  LayoutDashboard,
+  Mic,
+  Code,
+  FileText,
+  Brain
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -338,6 +342,108 @@ const ProductsSection = () => {
                 <p className="font-medium text-orange-900">
                   <span className="font-bold">Outcome:</span> A robust platform for institutes to conduct credible assessments and prepare students for interviews.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Product 5: Shaurya */}
+        <div className="mb-24">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2 order-2 lg:order-1">
+              <div className="bg-primary/5 p-2 rounded-lg inline-block mb-4">
+                <span className="font-semibold text-primary text-lg">Shaurya</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">AI-Powered Mock Interview Platform</h3>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Intelligent Interview Formats:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <Mic className="h-4 w-4 text-purple-600" />
+                    </div>
+                    <div>
+                      <span className="font-medium">Audio-based Q&A:</span> Natural conversation flow with voice recognition and real-time feedback.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <FileText className="h-4 w-4 text-purple-600" />
+                    </div>
+                    <div>
+                      <span className="font-medium">Text-based Technical Questions:</span> Comprehensive subject knowledge assessment.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <Code className="h-4 w-4 text-purple-600" />
+                    </div>
+                    <div>
+                      <span className="font-medium">Live Coding Challenges:</span> Real-time code evaluation and problem-solving assessment.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">AI-Driven Features:</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Brain className="h-5 w-5 text-purple-600 mr-3" />
+                    <span>CV-based question generation</span>
+                  </div>
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <ChartLine className="h-5 w-5 text-purple-600 mr-3" />
+                    <span>Performance analytics</span>
+                  </div>
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Check className="h-5 w-5 text-purple-600 mr-3" />
+                    <span>Detailed improvement feedback</span>
+                  </div>
+                  <div className="flex items-center bg-white p-3 rounded-lg shadow-sm card-hover">
+                    <Sparkles className="h-5 w-5 text-purple-600 mr-3" />
+                    <span>Adaptive difficulty adjustment</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold mb-3">Real-world Simulation:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <Badge className="h-4 w-4 text-purple-600" />
+                    </div>
+                    <div>
+                      Company-specific interview patterns and question styles.
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="bg-purple-100 p-1 rounded-full mr-3 mt-1">
+                      <Eye className="h-4 w-4 text-purple-600" />
+                    </div>
+                    <div>
+                      Video analysis for body language and communication skills.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="p-4 bg-purple-50 rounded-lg">
+                <p className="font-medium text-purple-900">
+                  <span className="font-bold">Outcome:</span> Build confidence through personalized practice sessions that mirror actual interview experiences and provide actionable insights for improvement.
+                </p>
+              </div>
+            </div>
+            
+            <div className="lg:w-1/2 order-1 lg:order-2">
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-[1.02] transition-transform duration-300 hover:shadow-xl">
+                <img 
+                  src="/Shaurya.png" 
+                  alt="Shaurya AI Mock Interview Platform" 
+                  className="w-full h-auto rounded-xl object-cover shadow-md"
+                />
               </div>
             </div>
           </div>
