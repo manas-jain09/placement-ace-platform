@@ -36,7 +36,7 @@ const Login = () => {
       }
 
       // If authentication successful, redirect to profile
-      window.location.href = `https://yodha.ikshvaku-innovations.in/profile/${userData.id}`;
+      window.location.href = `https://yodha.mitwpu.ikshvaku-innovations.in/profile/${userData.id}`;
     } catch (err) {
       console.error('Login error:', err);
       setError('An error occurred during login. Please try again.');
